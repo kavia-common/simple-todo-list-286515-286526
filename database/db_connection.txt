@@ -1,0 +1,5 @@
+# For executing individual SQL commands inside the running container:
+# Using sqlite3 directly:
+sqlite3 /data/todos.db
+# Or using the Python helper for single commands:
+python /app/db_shell.py -c "SELECT 1;"
